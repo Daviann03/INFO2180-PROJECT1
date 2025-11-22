@@ -2,10 +2,213 @@
 body {
     margin: 0;
     font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+/* ========================= */
+/*        HEADER             */
+/* ========================= */
+
+header {
+    background-color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 18px;
+}
+
+header a:hover {
+    color: #5A67D8;
+}
+
+/* ========================= */
+/*        HERO SECTION       */
+/* ========================= */
+
+.overview-hero {
+    background-color: #E2E8F0;
+    padding: 50px 0;
+}
+
+.overview-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.overview-hero-image img {
+    width: 350px;   /* FIXED: was 100%, too big */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overview-hero-text {
+    width: 100%;
+}
+
+/* ========================= */
+/*     LEARN ABOUT SECTION   */
+/* ========================= */
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+/* FIXED: your HTML uses "cards", so CSS must match */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #48BB78;
+    font-size: 21px;
+}
+
+/* ========================= */
+/*    COVID TESTING SECTION  */
+/* ========================= */
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+    padding: 60px 0;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.testing a {
+    background-color: #48BB78;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ========================= */
+/*     RECENT STORIES        */
+/* ========================= */
+
+.stories h2 {
+    color: #5A67D8;
+}
+
+.story,
+article {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.story img,
+article img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.story h3,
+article h3 {
+    font-size: 18px;
+}
+
+.story a,
+article a {
+    color: #5A67D8;
+    font-weight: bold;
+}
+
+/* ========================= */
+/*      NEWSLETTER           */
+/* ========================= */
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 12px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width: 280px;
+}
+
+.newsletter button {
+    background-color: #5A67D8;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/*         FOOTER            */
+/* ========================= */
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
 }
