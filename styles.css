@@ -61,7 +61,7 @@ header a:hover {
 }
 
 .overview-hero-image img {
-    width: 350px;   /* FIXED: was 100%, too big */
+    width: 350px;   
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -80,7 +80,6 @@ header a:hover {
     color: #48BB78;
 }
 
-/* FIXED: your HTML uses "cards", so CSS must match */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
